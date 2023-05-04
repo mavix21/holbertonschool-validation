@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Awesome Inc."
 date: 2023-05-04T14:47:09-05:00
 draft: false
 ---
