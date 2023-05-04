@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://awwwesomeinc.org/"
 languageCode = "en-us"
 title = "Awesome Inc."
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
