@@ -31,7 +31,7 @@ what we can accomplish together. Thank you for choosing Awesome Inc.!
 
 ## Learn more about Awesome Inc.
 
-To learn more about Awesome Inc. and the services we offer, check out our website at [www.awesomeinc.com](https://www.awesomeinc.com).
+To learn more about Awesome Inc. and the services we offer, check out our website at [www.awesomeinc.com](https://www.awwwesomeinc.com).
 
 ## Our Team
 
