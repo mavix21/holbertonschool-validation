@@ -21,4 +21,4 @@ clean:
 # Post target: create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME
 post:
 	hugo new posts/$(POST_NAME).md;\
-		echo -e '---\ntitle: $(POST_TITLE)\ndate: $(shell date +%Y-%m-%dT%H:%M:%S%z)\n---\n\n# New Post' > content/posts/\$(POST_NAME).md
+		echo -e '---\ntitle: $(POST_TITLE)\ndate: $(shell date +%Y-%m-%dT%H:%M:%S%:z)\n---' > content/posts/$(POST_NAME).md
