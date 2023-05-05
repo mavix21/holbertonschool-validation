@@ -9,8 +9,7 @@ PUBLISH_DIR := dist/
 # Define targets
 .PHONY: build clean post
 
-# Build target: generate the website from the markdown and configuration
-# files
+# Build target: generate the website from the markdown and configuration files
 build:
 	@hugo
 
@@ -22,3 +21,4 @@ clean:
 post:
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/^title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
+	echo -e '# $(POST_TITLE)' >> content/posts/$(POST_NAME).md
