@@ -13,3 +13,4 @@
 3. Run `make build` to generate the website
 4. Run `make post POST_TITLE="YOUR_POST_TITLE" POST_NAME="YOUR_POST_NAME"` (or just `make post` if  you already set the variables in step 2) to create a new blog post
 5. Run `make clean` if you want to remove all the contents inside the `dist/` directory (the directory where the site will be published)
+6. Run `make help` if you want to see more information about the targets
