@@ -8,7 +8,12 @@ This is a simple HTTP server written in Go using the Gorilla Mux package.
 - [Go](https://golang.org/doc/install) installed
 - Make
 
-## Usage
+## Lifecycle
+
+To compile the source code of the application to a binary, run the following command:
+```bash
+make build
+```
 
 To run the server, simply run the following command:
 
