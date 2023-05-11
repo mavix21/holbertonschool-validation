@@ -4,8 +4,8 @@ This is a simple HTTP server written in Go using the Gorilla Mux package.
 
 ## Getting Started
 
-*Prerequisites*:
-- Go 1.13 or higher
+### Prerequisites
+- [Go](https://golang.org/doc/install) installed
 - Make
 
 ## Usage
