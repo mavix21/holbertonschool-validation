@@ -62,6 +62,14 @@ To check the status of the server, run:
 make test
 ```
 
+### Unit Tests
+
+To run the unit tests, run:
+
+```bash
+make unit-tests
+```
+
 ### Help
 
 To see all available commands, run:
