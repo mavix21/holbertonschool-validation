@@ -9,12 +9,6 @@ This is a simple website written in Markdown and built using Hugo
 - [Hugo v0.84.0](https://github.com/gohugoio/hugo/releases/tag/v0.84.0)
 - Make
 
-### Usage
-Clone this repository
-```
-
-```
-
 ## Lifecycle
 
 ### Build
