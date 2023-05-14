@@ -14,7 +14,8 @@ LOG_FILE = $(BINARY_NAME).log
 build: hugo-build go-build		## Generate the website and compile the source code of the app
 	
 go-build: go-lint				## Compile the source code of the application to a binary named awesome-api 
-	@go build
+	@go build -o $(BINARY_NAME)
+	@echo "# Executable awesome-api successfully created"
 
 hugo-build: check				## Generate the website from the markdown and configuration files
 	@hugo
