@@ -33,16 +33,16 @@ clean: stop						## Cleanup the content of the dist/ directory
 	@rm -rf $(PUBLISH_DIR)
 	@rm -f $(BINARY_NAME) $(LOG_FILE) coverage-units.out coverage-integrations.out
 
-check-markdown: 				## Lint Markdown files inside content/posts
+check: 							## Lint Markdown files inside content/posts
 	@markdownlint content/posts/*.md && markdown-link-check content/posts/*.md
 
-check-app:
+go-lint:						## Analyse the app source code
 	@golangci-lint run
 
 validate:						## Validate index.html with WC3-Validator
 	@python3 /opt/W3C-Validator/w3c_validator.py ./dist/index.html 2>&1 || true
 
-lint: check-markdown check-app	## Staticly analyse the app source code and markdown files
+lint: check go-lint				## Staticly analyse the app source code and markdown files
 
 test: unit-tests integration-tests validate	## Execute all testing targets
 	
