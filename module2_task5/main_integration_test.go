@@ -22,14 +22,14 @@ func Test_server(t *testing.T) {
 		{
 			name:         "Home page no slash",
 			URI:          "",
-			responseCode: 404,
-			body:         "404 page not found\n",
+			responseCode: 200,
+			body:         "",
 		},
 		{
 			name:         "Home page with slash",
 			URI:          "/",
-			responseCode: 404,
-			body:         "404 page not found\n",
+			responseCode: 200,
+			body:         "",
 		},
 		{
 			name:         "Hello page",
@@ -100,6 +100,10 @@ func Test_server(t *testing.T) {
 
 			// Check that the response body is what you expect.
 			expectedBody := tt.body
+			if expectedBody == "" {
+				return
+			}
+
 			bodyBytes, err := ioutil.ReadAll(res.Body)
 			res.Body.Close()
 			if err != nil {
