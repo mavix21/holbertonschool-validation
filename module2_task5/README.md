@@ -86,6 +86,22 @@ To validate index.html with WC3-Validator, run:
 make validate
 ```
 
+### Unit tests
+
+To run the unit tests, run:
+
+```bash
+make unit-tests
+```
+
+### Integration tests
+
+To run the integration tests, run:
+
+```bash
+make integration-tests
+```
+
 ### Test
 
 To execute all testing targets, including unit tests, integration tests, and
