@@ -48,7 +48,7 @@ lint: check go-lint	   ## Staticly analyse the app source code and markdown file
 test: unit-tests integration-tests validate    ## Execute all testing targets
 	
 unit-tests:		## Run the unit tests
-	@go test -v short -coverprofile=coverage-units.out
+	@go test -v -short -coverprofile=coverage-units.out
 
 integration-tests: 	## Run the integration-tests
 	@go test -v -coverprofile=coverage-integrations.out
