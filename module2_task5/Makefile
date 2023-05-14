@@ -13,7 +13,7 @@ LOG_FILE = $(BINARY_NAME).log
 
 build: hugo-build go-build		## Generate the website and compile the source code of the app
 	
-go-build: lint					## Compile the source code of the application to a binary named awesome-api 
+go-build: go-lint				## Compile the source code of the application to a binary named awesome-api 
 	@go build
 
 hugo-build: check				## Generate the website from the markdown and configuration files
