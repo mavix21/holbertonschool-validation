@@ -12,7 +12,7 @@ sudo apt-get -y install zip
 sudo apt-get -y install python3-pip
 python3 -m pip install requests
 sudo apt-get -y install git
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
 
 # include /usr/local/go/bin && (go env GOPATH)/bin in PATH
 PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
