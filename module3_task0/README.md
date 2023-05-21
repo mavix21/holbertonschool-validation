@@ -118,3 +118,8 @@ To see all available commands, run:
 ```bash
 make help
 ```
+
+## Workflow
+
+Workflow for this module can be found in .github/workflows/module3_task0.yml at
+the root of this repository
