@@ -35,7 +35,7 @@ clean: stop	## Cleanup the content of the dist/ directory
 	@rm -f $(BINARY_NAME) $(LOG_FILE) coverage-units.out coverage-integrations.out
 	@rm -f awesome-website.zip
 
-package: build
+package: build  ## Produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
 	@zip -r awesome-website.zip $(BINARY_NAME) $(PUBLISH_DIR)
 
 check: 	## Lint Markdown files inside content/posts and README.md and DEPLOY.md files
