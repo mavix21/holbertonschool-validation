@@ -31,10 +31,20 @@ jobs:
       - name: Setup required tools
         run: source module3_task2/setup.sh
 
+      - name: Lint app source code and markdown files
+        run: |
+          cd module3_task2
+          make lint
+
       - name: Build the app
         run: |
           cd module3_task2
           make build
+
+      - name: Run tests and validation
+        run: |
+          cd module3_task2
+          make test
 
       - name: Package the app
         run: |
