@@ -16,6 +16,6 @@ jobs:
 
       - name: Run make build
         run: |
-          cd module3_task0
+          cd module3_task1
           source setup.sh
           make build
