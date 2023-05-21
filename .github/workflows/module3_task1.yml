@@ -23,4 +23,6 @@ jobs:
         run: source module3_task1/setup.sh
 
       - name: Build the app
-        run: make -C module3_task1 build
+        run: |
+          cd module3_task1
+          make build
