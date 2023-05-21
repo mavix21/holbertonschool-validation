@@ -29,13 +29,13 @@ jobs:
           make build
 
       - name: Package the app
-        if: ${{ success() && github.ref == 'refs/head/main' }}
         run: |
           cd module3_task2
           make package
 
       - name: Archive artifact
-        if: ${{ success() && github.ref == 'refs/head/main' }}
+        if: ${{ github.ref == 'refs/head/main'
+             || github.ref == 'refs/head/master' }}
         uses: actions/upload-artifact@v3
         with:
           name: awesome-website
