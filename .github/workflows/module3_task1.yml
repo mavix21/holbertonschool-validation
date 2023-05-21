@@ -13,9 +13,14 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Run make build
-        run: |
-          cd module3_task1
-          source setup.sh
-          make build
+      - name: Validate setup.sh script
+        run: shellcheck module3_task1/setup.sh
+
+      - name: Setup required tools
+        run: source module3_task1/setup.sh
+
+      - name: Build the app
+        run: make -C module3_task1 build
