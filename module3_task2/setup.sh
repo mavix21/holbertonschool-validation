@@ -15,7 +15,7 @@ sudo wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
 
 # Extract and move go binary to /usr/local
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
 
 sudo npm install -g markdownlint-cli
 sudo npm install -g markdown-link-check
