@@ -50,7 +50,10 @@ validate:	## Validate index.html with WC3-Validator
 
 lint: check	   ## Staticly analyse the app source code and markdown files
 
-test: unit-tests integration-tests validate    ## Execute all testing targets
+test:    ## Execute all testing targets
+	$(MAKE) unit-tests
+	$(MAKE) integration-tests
+	$(MAKE) validate
 	
 unit-tests:		## Run the unit tests
 	@go test -v -short -coverprofile=coverage-units.out
