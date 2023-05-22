@@ -72,5 +72,6 @@ jobs:
           files: |
             module3_task4/awesome-website.zip
             module3_task4/DEPLOY.md
+          token: ${{ secrets.PAT }}
           body: |
             $(cat module3_task4.DEPLOY.md)
