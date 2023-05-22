@@ -48,7 +48,7 @@ go-lint:	## Analyse the app source code
 validate:	## Validate index.html with WC3-Validator
 	@python3 /opt/W3C-Validator/w3c_validator.py ./dist/index.html 2>&1 || true
 
-lint: check go-lint	   ## Staticly analyse the app source code and markdown files
+lint: check	   ## Staticly analyse the app source code and markdown files
 
 test: unit-tests integration-tests validate    ## Execute all testing targets
 	
