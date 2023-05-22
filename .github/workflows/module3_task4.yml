@@ -70,3 +70,5 @@ jobs:
           files: |
             module3_task4/awesome-website.zip
             module3_task4/DEPLOY.md
+          body: |
+            $(cat module3_task4.DEPLOY.md)
