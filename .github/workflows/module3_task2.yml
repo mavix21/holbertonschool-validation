@@ -31,10 +31,16 @@ jobs:
       - name: Setup required tools
         run: source module3_task2/setup.sh
 
-      - name: Lint app source code and markdown files
+      - name: Lint markdown files
         run: |
           cd module3_task2
           make lint
+
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          version: v1.42.1
+          working-directory: module3_task2
 
       - name: Build the app
         run: |
