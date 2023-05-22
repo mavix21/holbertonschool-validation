@@ -15,7 +15,7 @@ sudo apt-get -y install git
 curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$(go env GOPATH)/bin"
 
 # include /usr/local/go/bin && (go env GOPATH)/bin in PATH
-PATH=$PATH:$(HOME)/go/bin:$(go env GOPATH)/bin
+PATH=$PATH:$HOME/go/bin:$(go env GOPATH)/bin:/usr/local/go/bin
 export PATH
 
 git clone https://github.com/holbertonschool/W3C-Validator.git
