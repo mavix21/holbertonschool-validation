@@ -6,9 +6,11 @@ on:
     branches:
       - "main"
       - "master"
+    tags:
+      - "v*.*.*"
 
-    pull_request:
-      types: [opened, reopened, edited, ready_for_review]
+  pull_request:
+    types: [opened, reopened, edited, ready_for_review]
 
   schedule:
     - cron: '0 0 * * *'
