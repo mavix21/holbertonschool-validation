@@ -50,7 +50,7 @@ make run
 ### Clean
 
 To cleanup the content of the ./dist/ directory, delete the binary
-`awesome-api`, log files and zip file awesome-website.zip, run:
+`awesome-api`, log files and zip file awesome-website.zip, if exists, run:
 
 ```bash
 make clean
