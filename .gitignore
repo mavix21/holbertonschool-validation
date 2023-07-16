@@ -2,3 +2,6 @@
 awesome-api
 awesome-website.zip
 awesome-api.log
+
+# Local Netlify folder
+.netlify
